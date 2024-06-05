@@ -1,2 +1,5 @@
 curl "https://language.googleapis.com/v1/documents:analyzeEntitySentiment?key=${API_KEY}" \
 -s -X POST -H "Content-Type: application/json" --data-binary @nl_request.json -o nl_response.json
+
+curl "https://speech.googleapis.com/v1/speech:recognize?key=${API_KEY}" \
+  -s -X POST -H "Content-Type: application/json" --data-binary @speech_request.json -o speech_response.json
